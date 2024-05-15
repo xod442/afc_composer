@@ -99,11 +99,11 @@ try:
 	#print('Creating the VSX pairs')
 	#vsx.create_vsxes(fabric_uuid, auth_header, **session_dict)
 
-	print('Creating the leaf-spine')
-	leaf_spine.create_leaf_spine(fabric_uuid, auth_header, **session_dict)
+	#print('Creating the leaf-spine')
+	#leaf_spine.create_leaf_spine(fabric_uuid, auth_header, **session_dict)
 
-	print('Creating the underlay network - OSPF')
-	underlay.create_underlay(vrf_uuid, auth_header,**session_dict)
+	#print('Creating the underlay network - OSPF')
+	#underlay.create_underlay(vrf_uuid, auth_header,**session_dict)
 
 
 

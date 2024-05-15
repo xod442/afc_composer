@@ -25,20 +25,18 @@ __status__ = "Alpha"
 '''
 
 def pod_info():
-    afc_ip = '10.251.1.30'
+    afc_ip = '10.250.203.30'
 
-    leaf_switch_list = ["10.251.1.12",
-                        "10.251.1.13",
-                        "10.251.1.14",
-                        "10.251.1.15"
+    leaf_switch_list = ["10.250.203.101",
+                        "10.250.203.102"
                     ]
-    spine_switch_list = ["10.251.1.11"]
+    spine_switch_list = ["10.250.203.103"]
 
     switch_list = leaf_switch_list + spine_switch_list
 
     base_url = "https://{0}/api/v1/".format(afc_ip)
 
-    name_server_list = ['10.251.1.1']
+    name_server_list = ['172.16.153.53']
 
     pod_info = {
                 'afc_ip':afc_ip,
@@ -61,7 +59,7 @@ def pod_info():
                 'timezone' : 'America/Los_Angeles',
                 'vrf_name' : 'default',
                 'ntp_name' : 'ntp-fabric',
-                'ntp_ip' : '10.251.1.1',
+                'ntp_ip' : '10.202.63.7',
                 'dns_afc_name' : 'dns-fabric',
                 'domain_name' : 'lab.local',
                 'name_server_list' : name_server_list
